@@ -1,11 +1,8 @@
-# SMC_predictor
-An automated, algorithmic trading execution bot designed to identify and trade institutional market structure, market structure shifts (MSS), and Liquidity sweeps. This project leverages real-time streaming data via WebSockets for low-latency market analysis and order execution.
-
 # SMC Multi-System Prediction Pipeline
 
-A modelling layer that sits on top of your `MarketStructureParser` and
-`mtf_state_builder`. It turns the per-timeframe structure output into supervised
-labels and trains the three prediction systems you described, plus the M5
+A modelling layer that sits on top of the `MarketStructureParser` and
+`mtf_state_builder` which where created on a separate project. It turns the per-timeframe structure output into supervised
+labels and trains the three prediction systems described below, plus an M5
 forward-window labels — with **empirical baselines** and **leakage-safe ML models**
 layered on top of each other.
 
